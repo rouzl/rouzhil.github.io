@@ -4,25 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rouzhi Liang — Economics</title>
-  <meta name="description" content="<!-- EDIT: One‑sentence SEO description --> Economics PhD job market candidate. CV, research, data & code." />
+  <meta name="description" content="Rouzhi Liang — Economics PhD job-market candidate. CV, research, data & code." />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.1/tailwindcss.min.js"></script>
-  <link rel="icon" href="/img/favicon.png" /> <!-- EDIT: /img/favicon.png -->
-  <style>
-    .nav a{ @apply text-gray-800 hover:text-blue-700; }
-    .prose p{ @apply mb-4 leading-relaxed; }
-  </style>
+  <link rel="icon" href="/img/favicon.png" />
 </head>
 <body class="bg-white text-gray-900 antialiased">
+  <div id="top"></div>
+
   <!-- Top Bar -->
   <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex items-center justify-between">
       <a href="#top" class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Rouzhi Liang</a>
-      <nav class="nav hidden sm:flex gap-6 text-lg">
-        <a href="#about">About</a>
-        <a href="/CV.pdf"><!-- EDIT: CV file path --> CV</a>
-        <a href="#research">Research</a>
-        <a href="#teaching">Teaching</a>
+      <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
+        <a class="hover:text-blue-700" href="#about">About</a>
+        <a class="hover:text-blue-700" href="/CV.pdf">CV</a>
+        <a class="hover:text-blue-700" href="#research">Research</a>
+        <a class="hover:text-blue-700" href="#teaching">Teaching</a>
       </nav>
     </div>
   </header>
@@ -33,21 +31,21 @@
     <div class="grid grid-cols-1 md:grid-cols-[300px_minmax(0,1fr)] gap-8">
       <!-- Left: headshot with light border and email caption -->
       <figure class="border rounded-md p-2 w-[300px] h-auto md:sticky md:top-8 bg-white">
-        <img src="/img/headshot.jpg" alt="<!-- EDIT: Alt text for headshot --> Headshot of Rouzhi Liang" class="w-full h-auto object-cover rounded"/>
-        <figcaption class="text-sm text-gray-700 mt-3"><!-- EDIT: Email shown under photo --> rouzhil [at] smu [dot] edu</figcaption>
+        <img src="/img/headshot.jpg" alt="Headshot of Rouzhi Liang" class="w-full h-auto object-cover rounded"/>
+        <figcaption class="text-sm text-gray-700 mt-3">rouzhil [at] smu [dot] edu</figcaption>
       </figure>
 
       <!-- Right: intro paragraphs -->
-      <section class="prose max-w-none">
-        <p class="mb-6"><!-- EDIT: Your department/university line --> I'm an economics Ph.D. candidate at <span class="font-medium">Southern Methodist University. I will be in the Job market for the academic year 2025-2026</span>.</p>
-        <p class="mb-6"><span class="font-semibold">Research Interests:</span> <!-- EDIT: your fields --> Macroeconomics and Economic Growth, Entrepreneurship, Culture, and Fertility.</p>
-        <p class="mb-6"><strong>Contact:</strong> <!-- EDIT: contact email or office --> rouzhil@smu.edu</p>
+      <section class="max-w-none">
+        <p class="mb-6">I'm an economics Ph.D. candidate at <span class="font-medium">Southern Methodist University</span>. I will be on the job market in 2025–2026.</p>
+        <p class="mb-6"><span class="font-semibold">Research Interests:</span> Macroeconomics and Economic Growth, Entrepreneurship, Culture, and Fertility.</p>
+        <p class="mb-6"><strong>Contact:</strong> rouzhil@smu.edu</p>
       </section>
     </div>
 
     <hr class="mt-10 border-gray-200"/>
 
-    <!-- Social icons row (no Scholar/ORCID) -->
+    <!-- Social icons row -->
     <div class="flex justify-center gap-8 py-6 text-blue-700">
       <!-- X / Twitter -->
       <a href="https://x.com/RylieLiang" aria-label="X" class="hover:text-blue-800" target="_blank" rel="noopener">
@@ -61,22 +59,21 @@
   </main>
 
   <!-- Sections for top nav -->
-  <section id="Working Papers" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  <section id="research" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <h2 class="text-2xl font-semibold mb-4">Working Papers</h2>
     <ul class="list-disc ml-6 space-y-2">
-      <li><span class="font-medium"></span> <!-- EDIT: J M P title here --><strong>Bequest, Fertility and Barriers to Entrepreneurship（JMP） </strong> <a class="underline" href="<!-- EDIT: JMP PDF path --> /papers/jmp.pdf">PDF</a></li>
-      <li><!-- EDIT: add Working Papers / Projects -->  <strong>Individualism and Innovation: Unraveling Culture’s
-           Influence Across Time</strong> <a class='underline' href='/papers/wp1.pdf'>PDF</a></li>
+      <li><strong>Bequest, Fertility and Barriers to Entrepreneurship (JMP)</strong> <a class="underline" href="/papers/jmp.pdf">PDF</a></li>
+      <li><strong>Individualism and Innovation: Unraveling Culture’s Influence Across Time</strong> <a class="underline" href="/papers/wp1.pdf">PDF</a></li>
     </ul>
   </section>
 
   <section id="teaching" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <h2 class="text-2xl font-semibold mb-4">Teaching</h2>
-    <ul class="list-disc ml-6"><li><!-- EDIT --> Course / TA · Semester · Department</li></ul>
+    <ul class="list-disc ml-6"><li>Course / TA · Semester · Department</li></ul>
   </section>
 
   <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t text-sm text-gray-600">
-    © <span id="year"></span> <!-- EDIT: footer name --> Rouzhi Liang
+    © <span id="year"></span> Rouzhi Liang
   </footer>
 
   <script>
