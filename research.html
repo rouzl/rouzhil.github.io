@@ -19,23 +19,25 @@
   </style>
 </head>
 <body class="bg-white text-gray-900 antialiased">
-  <!-- Header -->
+  <!-- Header (match homepage) -->
   <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex items-center justify-between">
-    <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
-      <a class="hover:text-blue-700" href="/">Home</a>
-      <a class="hover:text-blue-700" href="/CV.pdf" target="_blank" rel="noopener">CV</a>
-      <a class="hover:text-blue-700" href="/teaching.html">Teaching</a>
-    </nav>
+      <a href="/" class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Rouzhi Liang</a>
+      <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
+        <a class="hover:text-blue-700" href="/">Home</a>
+        <a class="hover:text-blue-700" href="/CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a class="hover:text-blue-700" href="/teaching.html">Teaching</a>
+      </nav>
     </div>
   </header>
   <hr class="max-w-5xl mx-auto border-gray-200"/>
 
   <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <h1 class="text-3xl font-semibold tracking-tight mb-2">Research</h1>
+    <!-- Keep semantic H1 for SEO/a11y but hide it visually -->
+    <h1 class="sr-only">Research</h1>
 
-    <!-- Working Papers (no dividers between papers) -->
-    <section id="wp" class="mt-8">
+    <!-- Working Papers -->
+    <section id="wp" class="mt-2">
       <h2 class="text-2xl font-semibold tracking-tight mb-4">Working Papers</h2>
 
       <article class="py-4">
@@ -72,10 +74,8 @@
       </article>
     </section>
 
-    <!-- Divider BETWEEN parts -->
     <hr class="my-10 border-gray-200"/>
 
-    <!-- Works in Progress -->
     <section id="wip">
       <h2 class="text-2xl font-semibold tracking-tight mb-4">Works in Progress</h2>
       <ul class="list-disc ml-6 space-y-2">
@@ -83,10 +83,8 @@
       </ul>
     </section>
 
-    <!-- Divider BETWEEN parts -->
     <hr class="my-10 border-gray-200"/>
 
-    <!-- Presentations (no PDF/Slides links) -->
     <section id="talks">
       <h2 class="text-2xl font-semibold tracking-tight mb-4">Presentations</h2>
       <ul class="list-disc ml-6 space-y-2">
