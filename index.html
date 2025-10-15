@@ -15,12 +15,13 @@
   <!-- Top Bar -->
   <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex items-center justify-between">
-      <a href="#top" class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Rouzhi Liang</a>
+      <a href="/" class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Rouzhi Liang</a>
       <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
         <a class="hover:text-blue-700" href="#about">About</a>
-        <a class="hover:text-blue-700" href="/CV.pdf">CV</a>
-        <a class="hover:text-blue-700" href="#research">Research</a>
-        <a class="hover:text-blue-700" href="#teaching">Teaching</a>
+        <a class="hover:text-blue-700" href="/CV.pdf" target="_blank" rel="noopener">CV</a>
+        <!-- Go to dedicated pages; keep anchors as secondary buttons below -->
+        <a class="hover:text-blue-700" href="/research.html">Research</a>
+        <a class="hover:text-blue-700" href="/teaching.html">Teaching</a>
       </nav>
     </div>
   </header>
@@ -37,17 +38,27 @@
 
       <!-- Right: intro paragraphs -->
       <section class="max-w-none">
-      <p class="mb-6">
-        I'm an economics Ph.D. candidate at <span class="font-medium">Southern Methodist University</span>.
-        I will be on the job market in 2025–2026.
-        You can find my CV <a href="/CV.pdf">here</a>.
-      </p>
-      <p class="mb-6"><span class="font-semibold">Research Interests:</span> Macroeconomics and Economic Growth, Entrepreneurship, Culture, and Fertility.</p>
-      <p class="mb-6"><strong>Contact:</strong> rouzhil@smu.edu</p>
+        <p class="mb-6">
+          I'm an economics Ph.D. candidate at <span class="font-medium">Southern Methodist University</span>.
+          I will be on the job market in 2025–2026.
+          You can find my CV <a class="underline decoration-2 underline-offset-2 text-blue-700 hover:text-blue-800" href="/CV.pdf" target="_blank" rel="noopener">here</a>.
+        </p>
+        <p class="mb-6"><span class="font-semibold">Research Interests:</span> Macroeconomics and Economic Growth, Family Economics, Culture and Entrepreneurship.</p>
+        <p class="mb-6"><strong>Contact:</strong> rouzhil@smu.edu</p>
       </section>
     </div>
 
     <hr class="mt-10 border-gray-200"/>
+
+    <!-- Quick buttons to scroll on this page (keep both worlds: page & section) -->
+    <div class="flex justify-center gap-4 py-4">
+      <a href="#research" class="px-4 py-2 rounded-md border hover:bg-gray-50">Research (on this page)</a>
+      <a href="/research.html" class="px-4 py-2 rounded-md border hover:bg-gray-50">Research (full page)</a>
+      <a href="#teaching" class="px-4 py-2 rounded-md border hover:bg-gray-50">Teaching (on this page)</a>
+      <a href="/teaching.html" class="px-4 py-2 rounded-md border hover:bg-gray-50">Teaching (full page)</a>
+    </div>
+
+    <hr class="border-gray-200"/>
 
     <!-- Social icons row -->
     <div class="flex justify-center gap-8 py-6 text-blue-700">
@@ -62,19 +73,59 @@
     </div>
   </main>
 
-  <!-- Sections for top nav -->
+  <!-- Sections for top nav (summary versions kept on homepage) -->
   <section id="research" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <h2 class="text-2xl font-semibold mb-4">Working Papers</h2>
-    <ul class="list-disc ml-6 space-y-2">
-      <li><strong>Bequest, Fertility and Barriers to Entrepreneurship (JMP)</strong> <a class="underline" href="/papers/jmp.pdf">PDF</a></li>
-      <li><strong>Individualism and Innovation: Unraveling Culture’s Influence Across Time</strong> <a class="underline" href="/papers/idv.pdf">PDF</a></li>
-    </ul>
+
+    <!-- Use <details> for native triangle toggle + summary always visible -->
+    <div class="space-y-4">
+      <details class="group border rounded-md p-4">
+        <summary class="list-none cursor-pointer flex items-center gap-2">
+          <!-- Triangle icon rotates when open via Tailwind group-open -->
+          <span class="transition-transform group-open:rotate-90">▶</span>
+          <span><strong>Bequests, Fertility, and Barriers to Entrepreneurship (JMP)</strong>
+            · <a class="underline text-blue-700 hover:text-blue-800" href="/papers/jmp.pdf" target="_blank" rel="noopener">PDF</a>
+          </span>
+        </summary>
+        <div class="mt-3 text-gray-800 leading-relaxed">
+          <!-- TODO: replace with your abstract -->
+          This paper develops an overlapping-generations model with endogenous fertility and bequests under financial frictions to study entrepreneurship, inequality, and mobility...
+        </div>
+      </details>
+
+      <details class="group border rounded-md p-4">
+        <summary class="list-none cursor-pointer flex items-center gap-2">
+          <span class="transition-transform group-open:rotate-90">▶</span>
+          <span><strong>Individualism and Innovation: Unraveling Culture’s Influence Across Time</strong>
+            · <a class="underline text-blue-700 hover:text-blue-800" href="/papers/idv.pdf" target="_blank" rel="noopener">PDF</a>
+          </span>
+        </summary>
+        <div class="mt-3 text-gray-800 leading-relaxed">
+          <!-- TODO: replace with your abstract -->
+          I revisit cross-country and historical evidence to reassess the role of individualism in innovation and long-run development, combining contemporary indices with historical proxies...
+        </div>
+      </details>
+    </div>
+
+    <div class="mt-6">
+      <a href="/research.html" class="inline-flex items-center gap-2 text-blue-700 hover:text-blue-800 underline">
+        View full Research page →
+      </a>
+    </div>
   </section>
 
   <section id="teaching" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
     <h2 class="text-2xl font-semibold mb-4">Teaching</h2>
-    <ul class="list-disc ml-6"><li> Instructor ·Intermediate Macroeconomics (Undergraduate-level) </li></ul>
-    <ul class="list-disc ml-6"><li> TA ·•	Macroeconomic Theory I  (PhD-level) </li></ul>
+    <ul class="list-disc ml-6 space-y-2">
+      <li><strong>Instructor</strong> · Intermediate Macroeconomics (Undergraduate)</li>
+      <li><strong>Teaching Assistant</strong> · Macroeconomic Theory I (PhD), Microeconomic Theory I & II (PhD), International Macroeconomic Theory and Policy (UG), Price Theory (UG), Strategic Behavior (UG)</li>
+    </ul>
+
+    <div class="mt-6">
+      <a href="/teaching.html" class="inline-flex items-center gap-2 text-blue-700 hover:text-blue-800 underline">
+        View full Teaching page →
+      </a>
+    </div>
   </section>
 
   <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t text-sm text-gray-600">
@@ -82,6 +133,7 @@
   </footer>
 
   <script>
+    // Update footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
