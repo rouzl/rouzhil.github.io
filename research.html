@@ -3,11 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Research — Rouzhi Liang</title>
   <meta name="description" content="Research page for Rouzhi Liang — working papers, abstracts, code and data." />
+  <link rel="canonical" href="https://rouzl.github.io/research.html" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Research — Rouzhi Liang" />
+  <meta property="og:description" content="Working papers, abstracts, code and data." />
+  <meta property="og:url" content="https://rouzl.github.io/research.html" />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:image" content="https://rouzl.github.io/img/og-research.png" /> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Research — Rouzhi Liang" />
+  <meta name="twitter:description" content="Working papers, abstracts, code and data." />
+  <!-- <meta name="twitter:image" content="https://rouzl.github.io/img/og-research.png" /> -->
+
+  <!-- Speed & favicon -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.1/tailwindcss.min.js"></script>
   <link rel="icon" href="/img/favicon.png" />
+
   <style>
     :root { --measure: 72ch; }
     main p, main li { line-height: 1.75; }
@@ -17,18 +35,35 @@
     details[open] summary { margin-bottom: .5rem; }
     summary:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 2px; }
   </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Research — Rouzhi Liang",
+    "url": "https://rouzl.github.io/research.html",
+    "isPartOf": {
+      "@type": "Website",
+      "name": "Rouzhi Liang — Economics",
+      "url": "https://rouzl.github.io/"
+    },
+    "description": "Working papers, abstracts, code and data."
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
   <!-- Header (match homepage) -->
   <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="flex items-center justify-between">
       <a href="/" class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Rouzhi Liang</a>
-    <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
-      <a class="hover:text-blue-700" href="/">Home</a>
-      <a class="hover:text-blue-700" href="/CV.pdf" target="_blank" rel="noopener">CV</a>
-      <a class="text-blue-700 font-semibold" href="/research.html" aria-current="page">Research</a>
-      <a class="hover:text-blue-700" href="/teaching.html">Teaching</a>
-    </nav>
+      <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
+        <!-- Home 回到首页并定位到 #Home -->
+        <a class="hover:text-blue-700" href="/#Home">Home</a>
+        <a class="hover:text-blue-700" href="https://drive.google.com/file/d/1A7HSglKcgkf4YMY5QY0bKNmbxKm1RaVQ/view?usp=sharing" target="_blank" rel="noopener">CV</a>
+        <a class="text-blue-700 font-semibold" href="/research.html" aria-current="page">Research</a>
+        <a class="hover:text-blue-700" href="/teaching.html">Teaching</a>
+      </nav>
     </div>
   </header>
   <hr class="max-w-5xl mx-auto border-gray-200"/>
@@ -81,26 +116,24 @@
       <h2 class="text-2xl font-semibold tracking-tight mb-4">Works in Progress</h2>
       <ul class="list-disc ml-6 space-y-2">
         <li>Fertility, Human Capital Investment, and Structural Change under Financial Frictions</li>
-      </ul>
-      <ul class="list-disc ml-6 space-y-2">
-        <li>Multiple Entrepreneurial Talent Misallocation with Javier Gonzalez </li>
+        <li>Multiple Entrepreneurial Talent Misallocation (with Javier Gonzalez)</li>
       </ul>
     </section>
 
     <hr class="my-10 border-gray-200"/>
 
-  <!-- Presentations (stacked vertically, 3 lines) -->
-  <section id="talks">
-    <h2 class="text-2xl font-semibold tracking-tight mb-4">Presentations</h2>
-    <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-      <li>
-        Southern Economic Association Annual Meeting, Nov. 2024
-        <span class="text-gray-600">(Graduate Student Award)</span>
-      </li>
-      <li>Southern Economic Association Annual Meeting, Nov. 2023</li>
-      <li>SMU Research and Innovation Week, Mar. 2023</li>
-    </ul>
-  </section>
+    <!-- Presentations -->
+    <section id="talks">
+      <h2 class="text-2xl font-semibold tracking-tight mb-4">Presentations</h2>
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>
+          Southern Economic Association Annual Meeting, Nov. 2024
+          <span class="text-gray-600">(Graduate Student Award)</span>
+        </li>
+        <li>Southern Economic Association Annual Meeting, Nov. 2023</li>
+        <li>SMU Research and Innovation Week, Mar. 2023</li>
+      </ul>
+    </section>
   </main>
 
   <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t text-sm text-gray-600">
