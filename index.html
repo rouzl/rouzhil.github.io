@@ -3,8 +3,26 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Rouzhi Liang — Economics</title>
   <meta name="description" content="Rouzhi Liang — Economics PhD job-market candidate. CV, research, data & code." />
+  <link rel="canonical" href="https://rouzl.github.io/" />
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="Rouzhi Liang — Economics" />
+  <meta property="og:description" content="Economics PhD job-market candidate. CV, research, data & code." />
+  <meta property="og:url" content="https://rouzl.github.io/" />
+  <meta property="og:type" content="website" />
+  <!-- 如有社交分享图，可解注释并替换为你的图片地址 -->
+  <!-- <meta property="og:image" content="https://rouzl.github.io/img/og-home.png" /> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rouzhi Liang — Economics" />
+  <meta name="twitter:description" content="Economics PhD job-market candidate. CV, research, data & code." />
+  <!-- <meta name="twitter:image" content="https://rouzl.github.io/img/og-home.png" /> -->
+
+  <!-- Speed & favicon -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.1/tailwindcss.min.js"></script>
   <link rel="icon" href="/img/favicon.png" />
@@ -19,9 +37,30 @@
     details[open] summary { margin-bottom: .5rem; }
     summary:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 2px; }
   </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rouzhi Liang",
+    "url": "https://rouzl.github.io/",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Southern Methodist University"
+    },
+    "email": "mailto:rouzhil@smu.edu",
+    "sameAs": [
+      "https://x.com/RylieLiang",
+      "https://www.linkedin.com/in/rouzhi-liang-8b0053381/"
+    ],
+    "description": "Economics PhD job-market candidate. CV, research, data & code."
+  }
+  </script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
-  <div id="top"></div>
+  <!-- 顶部锚点：供导航 Home 跳转 -->
+  <div id="Home"></div>
 
   <!-- Top Bar -->
   <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -29,7 +68,8 @@
       <a href="/" class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">Rouzhi Liang</a>
       <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
         <a class="hover:text-blue-700" href="#Home">Home</a>
-        <a class="hover:text-blue-700" href="https://drive.google.com/file/d/1A7HSglKcgkf4YMY5QY0bKNmbxKm1RaVQ/view?usp=sharing">CV</a>
+        <!-- 建议未来将 CV 放在 /CV.pdf 并改为本地链接 -->
+        <a class="hover:text-blue-700" href="https://drive.google.com/file/d/1A7HSglKcgkf4YMY5QY0bKNmbxKm1RaVQ/view?usp=sharing" target="_blank" rel="noopener">CV</a>
         <a class="hover:text-blue-700" href="/research.html">Research</a>
         <a class="hover:text-blue-700" href="/teaching.html">Teaching</a>
       </nav>
@@ -38,7 +78,7 @@
   <hr class="max-w-5xl mx-auto border-gray-200"/>
 
   <!-- Main two-column block -->
-  <main id="about" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <div class="grid grid-cols-1 md:grid-cols-[300px_minmax(0,1fr)] gap-8">
       <!-- Left: headshot -->
       <figure class="border rounded-md p-2 w-[300px] h-auto md:sticky md:top-8 bg-white">
@@ -72,57 +112,58 @@
     </div>
   </main>
 
-<!-- Research (homepage summary; no dividers between papers) -->
-<section id="research" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <h2 class="text-2xl font-semibold tracking-tight mb-4">Working Papers</h2>
+  <!-- Research (homepage summary; no dividers between papers) -->
+  <section id="research" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h2 class="text-2xl font-semibold tracking-tight mb-4">Working Papers</h2>
 
-  <!-- Paper 1 (JMP) -->
-  <article class="py-4">
-    <h3 class="text-lg font-semibold flex flex-wrap items-baseline gap-x-3 gap-y-1">
-      <span>Bequests, Fertility, and Barriers to Entrepreneurship</span>
-      <span class="text-gray-500 text-sm font-normal">(Job Market Paper)</span>
-      <a class="text-blue-700 hover:text-blue-800 text-sm font-normal" href="https://drive.google.com/file/d/1i-XJ4GcmFJVm6tSC63ZVb8NFTZ3yt8kJ/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
-    </h3>
-    <details class="group mt-2">
-      <summary class="list-none cursor-pointer inline-flex items-center gap-2">
-        <span class="transition-transform group-open:rotate-90">▶</span>
-        <span class="text-sm text-gray-700">Abstract</span>
-      </summary>
-      <div class="mt-3 text-gray-900 abstract">
-        <p>This paper studies how parental fertility and bequest decisions influence children’s ability to become entrepreneurs in the presence of financial frictions. Entrepreneurs often face borrowing constraints, which can be alleviated by intergenerational transfers. Previous empirical evidence suggests that high-income parents typically have fewer children and leave larger bequests, reducing their children’s financing barriers relative to those from low-income families. However, most existing work on intergenerational transfers and entrepreneurship has emphasized bequests, giving less attention to fertility as a key dimension of parental resource allocation. To address this gap, I develop an overlapping generations model with endogenous fertility, bequest, and occupational choices, calibrated to US data. The model reveals that parental fertility and bequest decisions, when combined with financial frictions, distort children’s occupational choices and reduce efficiency. Counterfactual analysis shows that reducing financial frictions increases income per capita but slightly reduces the entrepreneurship rate, raises income inequality, and lowers intergenerational mobility. These findings suggest that financial policy should aim to promote development while addressing the concern of income concentration.</p>
-      </div>
-    </details>
-  </article>
+    <!-- Paper 1 (JMP) -->
+    <article class="py-4">
+      <h3 class="text-lg font-semibold flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <span>Bequests, Fertility, and Barriers to Entrepreneurship</span>
+        <span class="text-gray-500 text-sm font-normal">(Job Market Paper)</span>
+        <a class="text-blue-700 hover:text-blue-800 text-sm font-normal" href="https://drive.google.com/file/d/1i-XJ4GcmFJVm6tSC63ZVb8NFTZ3yt8kJ/view?usp=sharing" target="_blank" rel="noopener">PDF</a>
+      </h3>
+      <details class="group mt-2">
+        <summary class="list-none cursor-pointer inline-flex items-center gap-2">
+          <span class="transition-transform group-open:rotate-90">▶</span>
+          <span class="text-sm text-gray-700">Abstract</span>
+        </summary>
+        <div class="mt-3 text-gray-900 abstract">
+          <p>This paper studies how parental fertility and bequest decisions influence children’s ability to become entrepreneurs in the presence of financial frictions. Entrepreneurs often face borrowing constraints, which can be alleviated by intergenerational transfers. Previous empirical evidence suggests that high-income parents typically have fewer children and leave larger bequests, reducing their children’s financing barriers relative to those from low-income families. However, most existing work on intergenerational transfers and entrepreneurship has emphasized bequests, giving less attention to fertility as a key dimension of parental resource allocation. To address this gap, I develop an overlapping generations model with endogenous fertility, bequest, and occupational choices, calibrated to US data. The model reveals that parental fertility and bequest decisions, when combined with financial frictions, distort children’s occupational choices and reduce efficiency. Counterfactual analysis shows that reducing financial frictions increases income per capita but slightly reduces the entrepreneurship rate, raises income inequality, and lowers intergenerational mobility. These findings suggest that financial policy should aim to promote development while addressing the concern of income concentration.</p>
+        </div>
+      </details>
+    </article>
 
-  <!-- Paper 2 -->
-  <article class="py-4">
-    <h3 class="text-lg font-semibold flex flex-wrap items-baseline gap-x-3 gap-y-1">
-      <span>Individualism and Innovation: Unraveling Culture’s Influence Across Time</span>
-      <a class="text-blue-700 hover:text-blue-800 text-sm font-normal" href="https://drive.google.com/file/d/1S_yrOlEeF6DyM1F3BBpcL5RFFnu-Kmv0/view?usp=sharing" rel="noopener">PDF</a>
-    </h3>
-    <details class="group mt-2">
-      <summary class="list-none cursor-pointer inline-flex items-center gap-2">
-        <span class="transition-transform group-open:rotate-90">▶</span>
-        <span class="text-sm text-gray-700">Abstract</span>
-      </summary>
-      <div class="mt-3 text-gray-900 abstract">
-        <p>This paper examines the impact of individualism on innovation and economic development over time. I begin by extending the cross-country literature, using the same time-invariant cultural measures but incorporating a longer time horizon and additional control variables. The estimated effects of individualism are inconsistent across specifications and time periods, particularly when I control for institutions. To address the limitations of time-invariant measures, I then turn to a within-U.S. analysis and construct time-varying, ancestry-based measures of individualism. This variation enables the use of fixed effects to capture local institutions and isolate the influence of culture. The results suggest that individualism either has a negative impact or no significant effect on innovation and economic development, in contrast to the prevailing findings in the existing literature.</p>
-      </div>
-    </details>
-  </article>
-</section>
+    <!-- Paper 2 -->
+    <article class="py-4">
+      <h3 class="text-lg font-semibold flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <span>Individualism and Innovation: Unraveling Culture’s Influence Across Time</span>
+        <a class="text-blue-700 hover:text-blue-800 text-sm font-normal" href="https://drive.google.com/file/d/1S_yrOlEeF6DyM1F3BBpcL5RFFnu-Kmv0/view?usp=sharing" rel="noopener">PDF</a>
+      </h3>
+      <details class="group mt-2">
+        <summary class="list-none cursor-pointer inline-flex items-center gap-2">
+          <span class="transition-transform group-open:rotate-90">▶</span>
+          <span class="text-sm text-gray-700">Abstract</span>
+        </summary>
+        <div class="mt-3 text-gray-900 abstract">
+          <p>This paper examines the impact of individualism on innovation and economic development over time. I begin by extending the cross-country literature, using the same time-invariant cultural measures but incorporating a longer time horizon and additional control variables. The estimated effects of individualism are inconsistent across specifications and time periods, particularly when I control for institutions. To address the limitations of time-invariant measures, I then turn to a within-U.S. analysis and construct time-varying, ancestry-based measures of individualism. This variation enables the use of fixed effects to capture local institutions and isolate the influence of culture. The results suggest that individualism either has a negative impact or no significant effect on innovation and economic development, in contrast to the prevailing findings in the existing literature.</p>
+        </div>
+      </details>
+    </article>
+  </section>
 
-<!-- Divider BETWEEN sections -->
-<hr class="max-w-5xl mx-auto border-gray-200"/>
+  <!-- Divider BETWEEN sections -->
+  <hr class="max-w-5xl mx-auto border-gray-200"/>
 
-<!-- Teaching (kept separate; its own section) -->
-<section id="teaching" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-  <h2 class="text-2xl font-semibold mb-4">Teaching</h2>
-  <ul class="list-disc ml-6 space-y-2">
-    <li><strong>Instructor</strong> · Intermediate Macroeconomics (UG)</li>
-    <li><strong>Teaching Assistant</strong> · Macroeconomic Theory I (PhD), Microeconomic Theory I & II (PhD), Strategic Behavior (Master), Economic Analysis I & II (Master), International Macroeconomic Theory and Policy (UG), Price Theory (UG), Price Theory(UG) </li>
-  </ul>
-</section>
+  <!-- Teaching -->
+  <section id="teaching" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h2 class="text-2xl font-semibold mb-4">Teaching</h2>
+    <ul class="list-disc ml-6 space-y-2">
+      <li><strong>Instructor</strong> · Intermediate Macroeconomics (UG)</li>
+      <li><strong>Teaching Assistant</strong> · Macroeconomic Theory I (PhD), Microeconomic Theory I &amp; II (PhD), Strategic Behavior (Master), Economic Analysis I &amp; II (Master), International Macroeconomic Theory and Policy (UG), Price Theory (UG)</li>
+    </ul>
+  </section>
+
   <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t text-sm text-gray-600">
     © <span id="year"></span> Rouzhi Liang
   </footer>
